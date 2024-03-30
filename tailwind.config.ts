@@ -14,7 +14,8 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        'button-purple': '#191a28',
+        'button-black-purple': '#191a28',
+        'button-black-common': '#1a1f1f',
       },
     },
   },
