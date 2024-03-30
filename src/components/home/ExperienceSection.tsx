@@ -1,7 +1,7 @@
 const ExperienceSection: React.FC = () => {
   return (
     <section id="experience-section">
-      <h1 className="text-teal-50 text-3xl">Experience</h1>
+      <h1 className="text-teal-50 font-bold text-5xl">Experience</h1>
     </section>
   );
 };
