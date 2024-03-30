@@ -3,24 +3,30 @@
 @tailwind utilities;
 
 body {
-  font-family: 'EliceDXNeolli';
+  font-family: 'Pretendard';
   background-color: #040d12;
 }
 
 @font-face {
-  font-family: 'EliceDXNeolli';
+  font-family: 'Pretendard';
   font-weight: 700;
-  src: url('/fonts/EliceDXNeolli-Bold.ttf') format('truetype');
+  src: url('/fonts/Pretendard-Bold.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'EliceDXNeolli';
+  font-family: 'Pretendard';
   font-weight: 500;
-  src: url('/fonts/EliceDXNeolli-Medium.ttf') format('truetype');
+  src: url('/fonts/Pretendard-Medium.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'EliceDXNeolli';
+  font-family: 'Pretendard';
+  font-weight: 400;
+  src: url('/fonts/Pretendard-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
   font-weight: 300;
-  src: url('/fonts/EliceDXNeolli-Light.ttf') format('truetype');
+  src: url('/fonts/Pretendard-Thin.woff') format('woff');
 }
