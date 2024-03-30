@@ -11,6 +11,7 @@ const Header: React.FC = () => {
             height={20}
             alt="githubImage"
           />
+          <div>어쩌구저쩌구</div>
         </div>
       </nav>
     </header>
