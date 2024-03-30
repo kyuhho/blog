@@ -5,9 +5,12 @@ import { GITHUB_URL } from '@/utils/constant';
 
 const Header: React.FC = () => {
   return (
-    <header className="px-96 flex items-center justify-between w-full border-b-2 h-20">
-      <Logo />
-      <nav>
+    <header className="flex justify-center w-full border-b-2 h-20">
+      <nav
+        className=" flex justify-between items-center "
+        style={{ width: '75rem' }}
+      >
+        <Logo />
         <Link href={GITHUB_URL}>
           <GithubIcon className="hover:opacity-70 cursor-pointer" />
         </Link>
