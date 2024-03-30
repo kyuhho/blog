@@ -7,9 +7,7 @@ interface MainLayoutProps {
 const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
     <main className="flex min-h-screen justify-center">
-      <div className=" flex flex-col items-center" style={{ width: '75rem' }}>
-        {children}
-      </div>
+      <div className=" flex flex-col items-center w-[75rem]">{children}</div>
     </main>
   );
 };
