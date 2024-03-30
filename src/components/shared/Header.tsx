@@ -5,9 +5,9 @@ import { GITHUB_URL } from '@/utils/constant';
 
 const Header: React.FC = () => {
   return (
-    <header className="flex justify-center w-full border-b-2 h-20">
+    <header className="flex justify-center w-full border-b-2">
       <nav
-        className=" flex justify-between items-center "
+        className=" flex justify-between items-center py-8"
         style={{ width: '75rem' }}
       >
         <Logo />
