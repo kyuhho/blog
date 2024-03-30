@@ -12,7 +12,8 @@
     "next": "13.4",
     "prettier": "^3.2.5",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-lottie-player": "^2.0.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
