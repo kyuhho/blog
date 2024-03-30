@@ -1,7 +1,7 @@
 import ExperienceSection from '@/components/home/ExperienceSection';
 import HeroSection from '@/components/home/HeroSection';
 import ProjectSection from '@/components/home/ProjectSection';
-import TechSection from '@/components/home/TechSection';
+import TechStackSection from '@/components/home/TechStackSection';
 import MainLayout from '@/components/shared/MainLayout';
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
     <MainLayout>
       <HeroSection />
       <ExperienceSection />
-      <TechSection />
+      <TechStackSection />
       <ProjectSection />
     </MainLayout>
   );
