@@ -9,7 +9,13 @@ const HeroSection: React.FC = () => {
         loop
         animationData={backgroundLottie}
         play
-        style={{ position: 'absolute', top: 0, width: '100vw', zIndex: -1 }}
+        style={{
+          position: 'absolute',
+          top: '4rem',
+          left: 0,
+          width: '100vw',
+          zIndex: -1,
+        }}
       />
       <div className="flex-col w-[50rem]">
         <h1 className="flex justify-center text-4xl font-bold text-teal-50 pb-10">
