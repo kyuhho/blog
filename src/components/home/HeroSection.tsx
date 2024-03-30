@@ -1,7 +1,9 @@
 'use client';
 import Lottie from 'react-lottie-player';
 import backgroundLottie from 'public/lotties/backgroundLottie.json';
-
+import LinkButton from '../shared/LinkButton';
+import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
+import { faSheetPlastic } from '@fortawesome/free-solid-svg-icons';
 const HeroSection: React.FC = () => {
   return (
     <section className="py-20">
@@ -27,15 +29,27 @@ const HeroSection: React.FC = () => {
           안녕하세요 소개소개 이러쿵저러쿵
         </div>
         <div className="flex text-teal-50 text-2xl font-medium justify-end">
-          랄랄라 움냠냠 동당당
+          새로운 스택이 어쩌구 저쩌구 옴냠냠
         </div>
         <div className="w-full flex justify-center p-16 gap-4">
-          <button className="bg-teal-500 rounded-[1rem] w-[10rem] h-[3rem]">
-            Projects
-          </button>
-          <button className="bg-teal-500 rounded-[1rem] w-[10rem] h-[3rem]">
-            Experience
-          </button>
+          <LinkButton
+            link="#experience-section"
+            text="Experiences"
+            icon={faScrewdriverWrench}
+          />
+          <LinkButton
+            link="#project-section"
+            text="Projects"
+            type="purple"
+            isBlack={true}
+            icon={faScrewdriverWrench}
+          />
+          <LinkButton
+            link="#tech-section"
+            text="Tech Stacks"
+            isBlack={true}
+            icon={faSheetPlastic}
+          />
         </div>
       </div>
     </section>
