@@ -5,7 +5,7 @@ const Logo: React.FC = () => {
     <Link href="/">
       <div className="flex">
         <div className="text-4xl text-teal-400 font-bold">{'<'}</div>
-        <div className="text-4xl text-gray-300 font-bold">{'Dev'}</div>
+        <div className="text-4xl text-gray-300 font-bold">{'295'}</div>
         <div className="text-4xl text-teal-400 font-bold">{'/>'}</div>
       </div>
     </Link>
