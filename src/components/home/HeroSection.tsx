@@ -38,17 +38,17 @@ const HeroSection: React.FC = () => {
             icon={faScrewdriverWrench}
           />
           <LinkButton
+            link="#tech-section"
+            text="Tech Stacks"
+            isBlack={true}
+            icon={faSheetPlastic}
+          />
+          <LinkButton
             link="#project-section"
             text="Projects"
             type="purple"
             isBlack={true}
             icon={faScrewdriverWrench}
-          />
-          <LinkButton
-            link="#tech-section"
-            text="Tech Stacks"
-            isBlack={true}
-            icon={faSheetPlastic}
           />
         </div>
       </div>
