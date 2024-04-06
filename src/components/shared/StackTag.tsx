@@ -1,9 +1,9 @@
 interface StackTagProps {
-  content: string;
+  name: string;
 }
 
-const StackTag: React.FC<StackTagProps> = ({ content }) => {
-  return <div></div>;
+const StackTag: React.FC<StackTagProps> = ({ name }) => {
+  return <div>{name}</div>;
 };
 
 export default StackTag;
