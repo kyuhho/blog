@@ -3,7 +3,11 @@ interface StackTagProps {
 }
 
 const StackTag: React.FC<StackTagProps> = ({ name }) => {
-  return <div>{name}</div>;
+  return (
+    <span className="rounded-lg text-button-common bg-button-black-common p-2">
+      {name}
+    </span>
+  );
 };
 
 export default StackTag;

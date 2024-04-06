@@ -15,7 +15,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   stacks,
 }) => {
   return (
-    <div className="rounded-2xl bg-card-bg shadow-xl">
+    <li className="rounded-2xl bg-card-bg shadow-xl">
       <div className="aspect-video relative">
         <Image
           src={imgUrl}
@@ -28,12 +28,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           }}
         />
       </div>
-      <div className="text-teal-50">{title}</div>
-      <div className="text-teal-50">{description}</div>
-      {stacks.map((item) => (
-        <StackTag key={item} name={item} />
-      ))}
-    </div>
+      <div className="flex flex-col gap-4 p-4">
+        <div className="text-teal-50 font-bold text-2xl">{title}</div>
+        <div className="text-teal-50">{description}</div>
+        <div className="mt-6 flex gap-2">
+          {stacks.map((item) => (
+            <StackTag key={item} name={item} />
+          ))}
+        </div>
+      </div>
+    </li>
   );
 };
 

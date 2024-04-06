@@ -14,10 +14,10 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        'button-black-purple': '#191a28',
-        'button-black-common': '#1a1f1f',
         'button-common': '#57bfc1',
         'button-purple': '#dd83f8',
+        'button-black-purple': '#191a28',
+        'button-black-common': '#1a1f1f',
         'card-bg': '#32343D',
       },
     },
