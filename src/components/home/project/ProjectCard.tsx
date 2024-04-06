@@ -2,10 +2,15 @@ import Image, { StaticImageData } from 'next/image';
 
 interface ProjectCardProps {
   title: string;
+  description: string;
   imgUrl: StaticImageData;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, imgUrl }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  title,
+  imgUrl,
+  description,
+}) => {
   return (
     <div className="rounded-2xl bg-card-bg shadow-xl h-96 ">
       <div className="aspect-video relative">
@@ -21,6 +26,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, imgUrl }) => {
         />
       </div>
       <div className="text-teal-50">{title}</div>
+      <div className="text-teal-50">{description}</div>
     </div>
   );
 };
