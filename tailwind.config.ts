@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       gridTemplateColumns: {
         'template-projects': 'repeat(2,1fr)',
+        'template-experiences': 'repeat(3,1fr)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
