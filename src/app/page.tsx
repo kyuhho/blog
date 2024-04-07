@@ -8,9 +8,11 @@ export default function Home() {
   return (
     <MainLayout>
       <HeroSection />
-      <ExperienceSection />
-      <TechStackSection />
-      <ProjectSection />
+      <div className="w-[72rem]">
+        <ExperienceSection />
+        <TechStackSection />
+        <ProjectSection />
+      </div>
     </MainLayout>
   );
 }
