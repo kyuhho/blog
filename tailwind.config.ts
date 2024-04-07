@@ -16,8 +16,10 @@ const config: Config = {
       colors: {
         'button-common': '#57bfc1',
         'button-purple': '#dd83f8',
-        'button-black-purple': '#191a28',
+        'button-blue': '#38bdf8',
         'button-black-common': '#1a1f1f',
+        'button-black-purple': '#191a28',
+        'button-black-blue': '#0c091c',
         'card-bg': '#32343D',
       },
     },
