@@ -12,6 +12,7 @@ const ProjectSection: React.FC = () => {
             title={item.title}
             imgUrl={item.imgUrl}
             description={item.description}
+            roles={item.roles}
             stacks={item.stacks}
           />
         ))}

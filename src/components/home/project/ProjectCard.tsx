@@ -5,6 +5,7 @@ interface ProjectCardProps {
   title: string;
   description: string;
   imgUrl: StaticImageData;
+  roles: string[];
   stacks: string[];
 }
 
@@ -12,6 +13,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   imgUrl,
   description,
+  roles,
   stacks,
 }) => {
   return (
@@ -34,6 +36,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <div className="mt-6 flex gap-2">
           {stacks.map((item) => (
             <StackTag key={item} name={item} />
+          ))}
+          {roles.map((item) => (
+            <StackTag key={item} name={item} isRole={true} />
           ))}
         </div>
       </div>
