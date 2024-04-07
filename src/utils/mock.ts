@@ -1,4 +1,5 @@
-import sharemindImage from 'public/images/sharemind.png';
+import sharemindImage from 'public/images/projects/sharemind.png';
+import eliceImage from 'public/images/experiences/elice.png';
 
 export const projectMockData = [
   {
@@ -22,6 +23,7 @@ export const projectMockData = [
 export const experienceMockData = [
   {
     company: '엘리스',
+    imgUrl: eliceImage,
     role: 'Frontend Developer',
     startDate: '2024.03',
     endDate: 'Now',
