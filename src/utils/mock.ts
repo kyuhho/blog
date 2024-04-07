@@ -29,6 +29,16 @@ export const projectMockData = [
 
 export const experienceMockData = [
   {
+    name: '엘리스',
+    imgUrl: eliceImage,
+    description: '엘리스에서 랜딩도하고 lxp도 하고 어쩌구 저쩌구',
+    role: 'Frontend Developer',
+    startDate: '2024.03',
+    endDate: 'Now',
+    stacks: ['React', 'Nextjs', 'React-query', 'Material-UI'],
+    tools: ['Jira', 'Teams'],
+  },
+  {
     name: 'CEOS',
     imgUrl: ceosImage,
     description: 'CEOS 하면서 이것도 하고 저것도 하고 어쩌구 저쩌구',
@@ -37,26 +47,6 @@ export const experienceMockData = [
     endDate: '2024.02',
     stacks: ['React', 'Nextjs', 'Recoil', 'Styled-Components'],
     tools: ['Slack'],
-  },
-  {
-    name: '엘리스',
-    imgUrl: eliceImage,
-    description: '엘리스에서 랜딩도하고 lxp도 하고 어쩌구 저쩌구',
-    role: 'Frontend Developer',
-    startDate: '2024.03',
-    endDate: 'Now',
-    stacks: ['React', 'Nextjs', 'React-query', 'Material-UI'],
-    tools: ['Jira', 'Teams'],
-  },
-  {
-    name: '엘리스',
-    imgUrl: eliceImage,
-    description: '엘리스에서 랜딩도하고 lxp도 하고 어쩌구 저쩌구',
-    role: 'Frontend Developer',
-    startDate: '2024.03',
-    endDate: 'Now',
-    stacks: ['React', 'Nextjs', 'React-query', 'Material-UI'],
-    tools: ['Jira', 'Teams'],
   },
 ];
 
