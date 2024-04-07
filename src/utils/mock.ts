@@ -7,6 +7,8 @@ import eliceImage from 'public/images/experiences/elice.png';
 import htmlImage from 'public/images/tech-stacks/html.png';
 import cssImage from 'public/images/tech-stacks/css.png';
 import javascriptImage from 'public/images/tech-stacks/javascript.png';
+import reactImage from 'public/images/tech-stacks/react.png';
+import nextImage from 'public/images/tech-stacks/nextjs.png';
 
 export const projectMockData = [
   {
@@ -57,4 +59,6 @@ export const techStackFrontendMockData = [
   },
   { name: 'css', imgUrl: cssImage },
   { name: 'javascript', imgUrl: javascriptImage },
+  { name: 'react', imgUrl: reactImage },
+  { name: 'nextjs', imgUrl: nextImage },
 ];
