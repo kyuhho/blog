@@ -19,7 +19,7 @@ const config: Config = {
         'button-blue': '#38bdf8',
         'button-black-common': '#1a1f1f',
         'button-black-purple': '#191a28',
-        'button-black-blue': '#0c091c',
+        'button-black-blue': '#191b1d',
         'card-bg': '#32343D',
       },
     },

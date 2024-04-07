@@ -1,28 +1,19 @@
 import StackTag from '@/components/shared/StackTag';
-import Image, { StaticImageData } from 'next/image';
+import { ProjectCardItem } from '@/utils/types';
+import Image from 'next/image';
 
 interface ProjectCardProps {
-  title: string;
-  description: string;
-  imgUrl: StaticImageData;
-  roles: string[];
-  stacks: string[];
+  item: ProjectCardItem;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({
-  title,
-  imgUrl,
-  description,
-  roles,
-  stacks,
-}) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ item }) => {
   return (
     <li className="rounded-2xl bg-card-bg shadow-xl">
       <div className="aspect-video relative">
         <Image
-          src={imgUrl}
+          src={item.imgUrl}
           fill
-          alt={title}
+          alt={item.title}
           style={{
             borderTopLeftRadius: '1rem',
             borderTopRightRadius: '1rem',
@@ -31,14 +22,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         />
       </div>
       <div className="flex flex-col gap-4 p-4">
-        <div className="text-teal-50 font-bold text-2xl">{title}</div>
-        <div className="text-teal-50">{description}</div>
-        <div className="mt-6 flex gap-2">
-          {stacks.map((item) => (
+        <div className="text-teal-50 font-bold text-2xl">{item.title}</div>
+        <div className="text-teal-50">{item.description}</div>
+        <div className="mt-6 flex gap-2 flex-wrap">
+          {item.stacks.map((item) => (
             <StackTag key={item} name={item} />
           ))}
-          {roles.map((item) => (
-            <StackTag key={item} name={item} isRole={true} />
+          {item.roles.map((item) => (
+            <StackTag key={item} name={item} color="purple" />
+          ))}
+          {item.tools.map((item) => (
+            <StackTag key={item} name={item} color="blue" />
           ))}
         </div>
       </div>
