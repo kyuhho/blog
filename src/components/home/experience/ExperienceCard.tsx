@@ -24,11 +24,11 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ item }) => {
         </div>
         <div className="flex flex-col">
           <div className="text-teal-50 font-bold text-2xl">{item.name}</div>
-          <div className="text-teal-50 text-lg">{item.role}</div>
-          <div className="text-teal-50">{`${item.startDate} ~ ${item.endDate}`}</div>
+          <div className="text-gray-300 text-lg">{item.role}</div>
+          <div className="text-gray-300">{`${item.startDate} ~ ${item.endDate}`}</div>
         </div>
       </div>
-      <div className="text-teal-50">{item.description}</div>
+      <div className="text-gray-300">{item.description}</div>
 
       <div className="flex gap-2 flex-wrap">
         {item.stacks.map((item) => (
