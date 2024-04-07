@@ -8,9 +8,11 @@ export default function Home() {
   return (
     <MainLayout>
       <HeroSection />
-      <ExperienceSection />
-      <TechStackSection />
-      <ProjectSection />
+      <div className="flex flex-col gap-24">
+        <ExperienceSection />
+        <TechStackSection />
+        <ProjectSection />
+      </div>
     </MainLayout>
   );
 }

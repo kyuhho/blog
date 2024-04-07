@@ -1,6 +1,12 @@
+/** projects image */
 import sharemindImage from 'public/images/projects/sharemind.png';
-import eliceImage from 'public/images/experiences/elice.png';
+/** experiences image */
 import ceosImage from 'public/images/experiences/ceos.png';
+import eliceImage from 'public/images/experiences/elice.png';
+/** projects image */
+import htmlImage from 'public/images/tech-stacks/html.png';
+import cssImage from 'public/images/tech-stacks/css.png';
+import javascriptImage from 'public/images/tech-stacks/javascript.png';
 
 export const projectMockData = [
   {
@@ -52,4 +58,13 @@ export const experienceMockData = [
     stacks: ['React', 'Nextjs', 'React-query', 'Material-UI'],
     tools: ['Jira', 'Teams'],
   },
+];
+
+export const techStackFrontendMockData = [
+  {
+    name: 'html',
+    imgUrl: htmlImage,
+  },
+  { name: 'css', imgUrl: cssImage },
+  { name: 'javascript', imgUrl: javascriptImage },
 ];
