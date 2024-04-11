@@ -1,6 +1,9 @@
 import PopButton from '../shared/PopButton';
-import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
-import { faSheetPlastic } from '@fortawesome/free-solid-svg-icons';
+
+//
+//
+//
+
 const HeroSection: React.FC = () => {
   return (
     <section className="py-20">
@@ -11,10 +14,7 @@ const HeroSection: React.FC = () => {
           <span>입니다.</span>
         </h1>
         <div className="flex text-black text-2xl font-medium justify-start">
-          안녕하세요 소개소개 이러쿵저러쿵
-        </div>
-        <div className="flex text-black text-2xl font-medium justify-end">
-          새로운 스택이 어쩌구 저쩌구 옴냠냠
+          더 나은 경험을 주고자하는 도전적인 프론트엔드 개발자입니다.
         </div>
         <div className="w-full flex justify-center p-16 gap-4">
           <PopButton link="#experience-section" text="Experiences" />

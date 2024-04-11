@@ -7,6 +7,30 @@ body {
 }
 
 @font-face {
+  font-family: 'GillSans';
+  font-weight: 900;
+  src: url('/fonts/GillSans-Heavy.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'GillSans';
+  font-weight: 700;
+  src: url('/fonts/GillSans-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'GillSans';
+  font-weight: 500;
+  src: url('/fonts/GillSans-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'GillSans';
+  font-weight: 300;
+  src: url('/fonts/GillSans-Light.otf') format('opentype');
+}
+
+@font-face {
   font-family: 'NanumSquareNeo';
   font-weight: 900;
   src: url('/fonts/NanumSquareNeo-Heavy.otf') format('opentype');
