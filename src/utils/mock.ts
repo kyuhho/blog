@@ -55,10 +55,10 @@ export const experienceMockData = [
 export const techStackFrontendMockData = [
   {
     name: 'html',
-    imgUrl: htmlImage,
+    imgUrl: '/images/tech-stacks/html.png',
   },
-  { name: 'css', imgUrl: cssImage },
-  { name: 'javascript', imgUrl: javascriptImage },
-  { name: 'react', imgUrl: reactImage },
-  { name: 'nextjs', imgUrl: nextImage },
+  { name: 'css', imgUrl: '/images/tech-stacks/css.png' },
+  { name: 'javascript', imgUrl: '/images/tech-stacks/javascript.png' },
+  { name: 'react', imgUrl: '/images/tech-stacks/react.png' },
+  { name: 'nextjs', imgUrl: '/images/tech-stacks/nextjs.png' },
 ];

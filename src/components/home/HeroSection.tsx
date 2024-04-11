@@ -1,24 +1,9 @@
-'use client';
-import Lottie from 'react-lottie-player';
-import backgroundLottie from 'public/lotties/backgroundLottie.json';
 import LinkButton from '../shared/LinkButton';
 import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 import { faSheetPlastic } from '@fortawesome/free-solid-svg-icons';
 const HeroSection: React.FC = () => {
   return (
     <section className="py-20">
-      <Lottie
-        loop
-        animationData={backgroundLottie}
-        play
-        style={{
-          position: 'absolute',
-          top: '4rem',
-          left: 0,
-          width: '100vw',
-          zIndex: -1,
-        }}
-      />
       <div className="flex-col w-[50rem]">
         <h1 className="flex justify-center text-4xl font-bold text-teal-50 pb-10">
           <span>안녕하세요, 프론트엔드 개발자 &nbsp;</span>
