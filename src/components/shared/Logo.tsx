@@ -3,11 +3,8 @@ import Link from 'next/link';
 const Logo: React.FC = () => {
   return (
     <Link href="/">
-      <div className="flex">
-        <div className="text-4xl text-black font-bold">{'<'}</div>
-        <div className="text-4xl text-black font-bold">{'Logo'}</div>
-        <div className="text-4xl text-black font-bold">{'/>'}</div>
-      </div>
+      <span className="font-gilroy text-4xl text-black font-bold">{'LOG'}</span>
+      <span className="font-gilroy text-4xl text-black font-bold">{'O'}</span>
     </Link>
   );
 };
