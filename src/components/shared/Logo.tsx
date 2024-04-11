@@ -4,7 +4,9 @@ const Logo: React.FC = () => {
   return (
     <Link href="/">
       <span className="font-gilroy text-4xl text-black font-bold">{'LOG'}</span>
-      <span className="font-gilroy text-4xl text-black font-bold">{'O'}</span>
+      <span className="font-gilroy text-4xl text-primary-color font-bold">
+        {'O'}
+      </span>
     </Link>
   );
 };

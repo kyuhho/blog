@@ -4,7 +4,7 @@ import { faSheetPlastic } from '@fortawesome/free-solid-svg-icons';
 const HeroSection: React.FC = () => {
   return (
     <section className="py-20">
-      <div className="flex-col w-[50rem]">
+      <div className="font-nanum-square-neo flex-col w-[50rem]">
         <h1 className="flex justify-center text-4xl font-bold text-black pb-10">
           <span>안녕하세요, 프론트엔드 개발자 &nbsp;</span>
           <span className="text-black">이규호</span>
