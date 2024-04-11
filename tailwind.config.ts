@@ -23,6 +23,7 @@ const config: Config = {
       fontFamily: {
         gilroy: 'Gilroy',
         'nanum-square-neo': 'NanumSquareNeo',
+        'gill-sans': 'GillSans',
       },
     },
   },
