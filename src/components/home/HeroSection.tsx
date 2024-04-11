@@ -1,4 +1,4 @@
-import LinkButton from '../shared/LinkButton';
+import LinkButton from '../shared/AnimateButton';
 import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 import { faSheetPlastic } from '@fortawesome/free-solid-svg-icons';
 const HeroSection: React.FC = () => {
@@ -17,24 +17,9 @@ const HeroSection: React.FC = () => {
           새로운 스택이 어쩌구 저쩌구 옴냠냠
         </div>
         <div className="w-full flex justify-center p-16 gap-4">
-          <LinkButton
-            link="#experience-section"
-            text="Experiences"
-            icon={faScrewdriverWrench}
-          />
-          <LinkButton
-            link="#tech-section"
-            text="Tech Stacks"
-            isBlack={true}
-            icon={faSheetPlastic}
-          />
-          <LinkButton
-            link="#project-section"
-            text="Projects"
-            type="purple"
-            isBlack={true}
-            icon={faScrewdriverWrench}
-          />
+          <LinkButton link="#experience-section" text="Experiences" />
+          <LinkButton link="#tech-section" text="Tech Stacks" />
+          <LinkButton link="#project-section" text="Projects" />
         </div>
       </div>
     </section>
