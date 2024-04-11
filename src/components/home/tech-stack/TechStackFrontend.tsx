@@ -11,8 +11,8 @@ const TechStackFrontend: React.FC = () => {
 
   return (
     <div className="bg-card-bg rounded-2xl p-8">
-      <div className="text-teal-50 font-medium text-4xl ">Frontend</div>
-      <div className="w-full bg-teal-50 h-[0.125rem] mt-2 mb-8" />
+      <div className="text-black font-medium text-4xl ">Frontend</div>
+      <div className="w-full text-black h-[0.125rem] mt-2 mb-8" />
 
       {/* align html, css, js */}
       <div className="flex gap-4">

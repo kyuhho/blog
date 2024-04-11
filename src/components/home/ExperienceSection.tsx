@@ -7,7 +7,7 @@ const ExperienceSection: React.FC = () => {
 
   return (
     <section id="experience-section" className="w-full">
-      <h1 className="text-teal-50 font-bold text-5xl mb-6">Experience</h1>
+      <h1 className="text-black font-bold text-5xl mb-6">Experience</h1>
       <ul className="grid grid-cols-template-experiences grid-rows-1 gap-4">
         {ExperienceItems.map((item) => (
           <ExperienceCard key={item.name} item={item} />
