@@ -21,6 +21,12 @@ const HeroSection: React.FC = () => {
           <PopButton link="#tech-section" text="Tech Stacks" />
           <PopButton link="#project-section" text="Projects" />
         </div>
+        <div className="flex flex-col items-center gap-[0.75rem]">
+          <div className="font-gilroy font-extrabold text-[1.25rem] mt-[6rem]">
+            {"Let's Scroll :)"}
+          </div>
+          <div className="w-[2px] h-[12.5rem] bg-black" />
+        </div>
       </div>
     </section>
   );
