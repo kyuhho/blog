@@ -101,30 +101,3 @@ body {
   font-weight: 100;
   src: url('/fonts/Gilroy-Thin.ttf') format('truetype');
 }
-
-/* inspired form gumroad website */
-.pop-button {
-  width: 100%;
-  height: 3.75rem;
-  --bg: #fff;
-  --hover-bg: #c5fa3d;
-  --hover-text: #000;
-  color: #000;
-  cursor: pointer;
-  border: 1px solid #000;
-  border-radius: 1.25rem;
-  background: var(--bg);
-  transition: 0.2s;
-}
-
-.pop-button:hover {
-  color: var(--hover-text);
-  transform: translate(-0.25rem, -0.25rem);
-  background: var(--hover-bg);
-  box-shadow: 0.25rem 0.25rem #000;
-}
-
-.pop-button:active {
-  transform: translate(0);
-  box-shadow: none;
-}
