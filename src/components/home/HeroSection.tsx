@@ -6,7 +6,7 @@ import PopButton from '../shared/PopButton';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="py-[15rem]">
+    <section className="pt-[15rem]">
       <div className="flex flex-col items-center gap-[2.25rem]">
         <h1 className="font-gill-sans flex flex-col items-center text-5xl font-bold text-black px-[3.375rem]">
           <span>안녕하세요,</span>

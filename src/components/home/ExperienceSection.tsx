@@ -9,10 +9,10 @@ const ExperienceSection: React.FC = () => {
 
   return (
     <section id="experience-section" className="w-full mt-[5rem]">
-      {/* <div className=""> */}
-      <NumberBox number={1} bgColor="green" />
-      <TitleBox content="Experience" bgColor="inherit" />
-      {/* </div> */}
+      <div className="flex gap-[0.625rem]">
+        <NumberBox number={1} bgColor="green" />
+        <TitleBox content="Experience" bgColor="inherit" />
+      </div>
       <ul className="flex flex-col">
         {ExperienceItems.map((item) => (
           <ExperienceCard key={item.name} item={item} />

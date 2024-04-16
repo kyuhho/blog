@@ -33,7 +33,7 @@ const TitleBox: React.FC<TitleBoxProps> = ({ content, bgColor }) => {
 
   return (
     <span
-      className={`border-solid border-[1px] border-black ${bgClassName} rounded-[0.75rem] px-[1.5rem] py-[0.28rem] font-gilroy font-extrabold text-[2.25rem]`}
+      className={`border-solid border-[1px] border-black ${bgClassName} rounded-[0.75rem] px-[1.5rem] py-[0.28rem] font-gilroy font-extrabold text-[2.25rem] leading-none`}
     >
       {content}
     </span>

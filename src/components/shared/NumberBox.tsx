@@ -33,7 +33,7 @@ const NumberBox: React.FC<NumberBoxProps> = ({ number, bgColor }) => {
 
   return (
     <span
-      className={`border-solid border-[1px] border-black ${bgClassName} rounded-[0.75rem] px-[1rem] py-[0.375rem] font-gilroy font-medium text-[2rem]`}
+      className={`border-solid border-[1px] border-black ${bgClassName} rounded-[0.75rem] px-[1rem] py-[0.375rem] font-gilroy font-medium text-[2rem] leading-none`}
     >
       {number}
     </span>
