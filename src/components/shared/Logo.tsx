@@ -1,12 +1,10 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 const Logo: React.FC = () => {
   return (
     <Link href="/">
-      <span className="font-gilroy text-4xl text-black font-bold">{'LOG'}</span>
-      <span className="font-gilroy text-4xl text-primary-color font-bold">
-        {'O'}
-      </span>
+      <Image width={100} height={35} src={'/icons/logo.png'} alt="logo" />
     </Link>
   );
 };
