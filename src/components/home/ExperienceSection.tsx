@@ -10,7 +10,7 @@ const ExperienceSection: React.FC = () => {
   return (
     <section
       id="experience-section"
-      className="w-full mt-[5rem] flex flex-col gap-[2.25rem]"
+      className="mt-[5rem] flex flex-col gap-[2.25rem]"
     >
       <div className="flex gap-[0.625rem]">
         <NumberBox number={1} bgColor="green" />
