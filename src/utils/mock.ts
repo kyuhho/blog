@@ -1,14 +1,8 @@
 /** projects image */
 import sharemindImage from 'public/images/projects/sharemind.png';
 /** experiences image */
-import ceosImage from 'public/images/experiences/ceos.png';
+import ceosImage from 'public/images/experiences/ceos.jpeg';
 import eliceImage from 'public/images/experiences/elice.png';
-/** projects image */
-import htmlImage from 'public/images/tech-stacks/html.png';
-import cssImage from 'public/images/tech-stacks/css.png';
-import javascriptImage from 'public/images/tech-stacks/javascript.png';
-import reactImage from 'public/images/tech-stacks/react.png';
-import nextImage from 'public/images/tech-stacks/nextjs.png';
 
 export const projectMockData = [
   {
@@ -31,7 +25,7 @@ export const projectMockData = [
 
 export const experienceMockData = [
   {
-    name: '엘리스',
+    name: 'Elice',
     imgUrl: eliceImage,
     description: '엘리스에서 랜딩도하고 lxp도 하고 어쩌구 저쩌구',
     role: 'Frontend Developer',

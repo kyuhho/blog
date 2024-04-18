@@ -8,14 +8,17 @@ const ExperienceSection: React.FC = () => {
   const ExperienceItems: ExperienceCardItem[] = experienceMockData;
 
   return (
-    <section id="experience-section" className="w-full mt-[5rem]">
+    <section
+      id="experience-section"
+      className="w-full mt-[5rem] flex flex-col gap-[2.25rem]"
+    >
       <div className="flex gap-[0.625rem]">
         <NumberBox number={1} bgColor="green" />
         <TitleBox content="Experience" bgColor="inherit" />
       </div>
-      <ul className="flex flex-col">
+      <ul className="flex flex-col gap-[2.25rem]">
         {ExperienceItems.map((item) => (
-          <ExperienceCard key={item.name} item={item} />
+          <ExperienceCard key={item.name} experienceItem={item} />
         ))}
       </ul>
     </section>

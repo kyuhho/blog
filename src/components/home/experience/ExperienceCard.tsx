@@ -1,42 +1,48 @@
 import StackTag from '@/components/shared/StackTag';
 import { ExperienceCardItem } from '@/utils/types';
 
+import PlusIcon from 'public/icons/plus.svg';
 import Image from 'next/image';
 
 interface ExperienceCardProps {
-  item: ExperienceCardItem;
+  experienceItem: ExperienceCardItem;
 }
 
-const ExperienceCard: React.FC<ExperienceCardProps> = ({ item }) => {
+const ExperienceCard: React.FC<ExperienceCardProps> = ({ experienceItem }) => {
   return (
-    <li className="flex flex-col gap-6 rounded-2xl bg-card-bg shadow-xl p-4">
-      <div className="flex gap-4">
-        <div className="aspect-video relative">
-          <Image
-            src={item.imgUrl}
-            width={120}
-            height={100}
-            alt={item.name}
-            style={{
-              borderRadius: '1rem',
-            }}
-          />
+    <li className="flex justify-between">
+      <div className="flex flex-col gap-[1.875rem] py-[1.25rem]">
+        <div className="font-gilroy flex flex-col gap-[0.125rem] leading-[1.2]">
+          <div className="text-black text-[2rem] font-bold">
+            {experienceItem.name}
+          </div>
+          <div className="text-black text-[1.125rem] font-medium">
+            {experienceItem.role}
+          </div>
+          <div className="text-black text-[1.125rem] font-medium">{`${experienceItem.startDate} ~ ${experienceItem.endDate}`}</div>
         </div>
-        <div className="flex flex-col">
-          <div className="text-black font-bold text-2xl">{item.name}</div>
-          <div className="text-black text-lg">{item.role}</div>
-          <div className="text-black">{`${item.startDate} ~ ${item.endDate}`}</div>
+        <div className="text-black font-nanum-square-neo font-normal">
+          {experienceItem.description}
+        </div>
+
+        <div className="flex gap-[0.75rem] flex-wrap items-center">
+          <PlusIcon />
+          {experienceItem.stacks.map((item) => (
+            <StackTag key={item} name={item} />
+          ))}
+          {experienceItem.tools.map((item) => (
+            <StackTag key={item} name={item} />
+          ))}
         </div>
       </div>
-      <div className="text-black">{item.description}</div>
-
-      <div className="flex gap-2 flex-wrap">
-        {item.stacks.map((item) => (
-          <StackTag key={item} name={item} />
-        ))}
-        {item.tools.map((item) => (
-          <StackTag key={item} name={item} color="blue" />
-        ))}
+      <div className="relative h-full w-[16.1875rem]">
+        <Image
+          fill
+          src={experienceItem.imgUrl}
+          alt={experienceItem.name}
+          className="rounded-[1.25rem]"
+          style={{ objectFit: 'cover' }}
+        />
       </div>
     </li>
   );
