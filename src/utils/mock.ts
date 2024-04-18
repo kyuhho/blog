@@ -46,13 +46,30 @@ export const experienceMockData = [
   },
 ];
 
-export const techStackFrontendMockData = [
+export const techStackMockData = [
   {
-    name: 'html',
-    imgUrl: '/images/tech-stacks/html.png',
+    type: 'Front-end',
+    stacks: [
+      'React',
+      'Next.js',
+      'Javascript',
+      'Typescript',
+      'Axios',
+      'tailwind',
+      'Styled-components',
+      'StompJs',
+    ],
   },
-  { name: 'css', imgUrl: '/images/tech-stacks/css.png' },
-  { name: 'javascript', imgUrl: '/images/tech-stacks/javascript.png' },
-  { name: 'react', imgUrl: '/images/tech-stacks/react.png' },
-  { name: 'nextjs', imgUrl: '/images/tech-stacks/nextjs.png' },
+  // {
+  //   type: 'Back-end',
+  //   stacks: ['nodejs', 'express'],
+  // },
+  {
+    type: 'Programming Language',
+    stacks: ['C', 'C++', 'Python'],
+  },
+  {
+    type: 'Productivity',
+    stacks: ['Jira', 'Slack', 'Figma', 'Notion'],
+  },
 ];
