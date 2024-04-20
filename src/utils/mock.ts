@@ -55,7 +55,7 @@ export const techStackMockData = [
       'Javascript',
       'Typescript',
       'Axios',
-      'tailwind',
+      'Tailwind',
       'Styled-components',
       'StompJs',
     ],
