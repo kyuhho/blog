@@ -1,6 +1,7 @@
 'use client';
 
 import StackTag from '@/components/shared/StackTag';
+import { css, keyframes } from '@emotion/react';
 import styled from '@emotion/styled';
 
 import ArrowIcon from 'public/icons/teck-arrow.svg';
@@ -19,6 +20,7 @@ interface TechStackCardProps {
 //
 
 const ARROW_ICON_CLASS_NAME = 'arrow-icon';
+const STACK_TAGS_CLASS_NAME = 'stacks-tag';
 
 //
 //
@@ -27,6 +29,18 @@ const ARROW_ICON_CLASS_NAME = 'arrow-icon';
 const CardWrapper = styled.div`
   &:hover .${ARROW_ICON_CLASS_NAME} {
     transform: rotate(45deg);
+    transition: transform 0.25s ease-in-out;
+  }
+  .${STACK_TAGS_CLASS_NAME} {
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  &:hover .${STACK_TAGS_CLASS_NAME} {
+    opacity: 1;
+    max-height: 100%;
   }
 `;
 
@@ -43,7 +57,7 @@ const TechStackCard: React.FC<TechStackCardProps> = ({ type, stacks }) => {
           {type}
         </span>
       </div>
-      <div className="flex gap-[0.5rem]">
+      <div className={`flex gap-[0.5rem] ${STACK_TAGS_CLASS_NAME}`}>
         {stacks.map((stackName) => (
           <StackTag key={stackName} name={stackName} />
         ))}
