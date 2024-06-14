@@ -26,16 +26,21 @@ const STACK_TAGS_CLASS_NAME = 'stacks-tag';
 //
 
 const CardWrapper = styled.div`
-  &:hover .${ARROW_ICON_CLASS_NAME} {
-    transform: rotate(45deg);
+  .${ARROW_ICON_CLASS_NAME} {
     transition: transform 0.25s ease-in-out;
   }
 
   .${STACK_TAGS_CLASS_NAME} {
     opacity: 0;
-    transition: opacity 0.25s ease-in-out;
+    transition:
+      opacity 0.25s ease-in-out,
+      max-height 0.25s ease-in-out;
     max-height: 0;
     overflow: hidden;
+  }
+
+  &:hover .${ARROW_ICON_CLASS_NAME} {
+    transform: rotate(45deg);
   }
 
   &:hover .${STACK_TAGS_CLASS_NAME} {
