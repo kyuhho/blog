@@ -26,13 +26,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ item }) => {
         <div className="text-black">{item.description}</div>
         <div className="mt-6 flex gap-2 flex-wrap">
           {item.roles.map((item) => (
-            <StackTag key={item} name={item} color="purple" />
+            <StackTag key={item} name={item} />
           ))}
           {item.stacks.map((item) => (
             <StackTag key={item} name={item} />
           ))}
           {item.tools.map((item) => (
-            <StackTag key={item} name={item} color="blue" />
+            <StackTag key={item} name={item} />
           ))}
         </div>
       </div>
