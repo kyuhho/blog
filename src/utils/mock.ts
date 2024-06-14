@@ -2,6 +2,7 @@
 import sharemindImage from 'public/images/projects/sharemind.png';
 /** experiences image */
 import ceosImage from 'public/images/experiences/ceos.jpeg';
+// import eliceImage from 'public/images/experiences/elice.png';
 import eliceImage from 'public/images/experiences/elice.png';
 
 export const projectMockData = [
@@ -58,6 +59,8 @@ export const techStackMockData = [
       'Tailwind',
       'Styled-components',
       'StompJs',
+      // 'Recoil',
+      // 'React-Query',
     ],
   },
   // {

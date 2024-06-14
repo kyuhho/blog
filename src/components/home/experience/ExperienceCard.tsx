@@ -4,11 +4,50 @@ import { ExperienceCardItem } from '@/utils/types';
 import PlusIcon from 'public/icons/plus.svg';
 import Image from 'next/image';
 
+//
+//
+//
+
 interface ExperienceCardProps {
   experienceItem: ExperienceCardItem;
 }
 
+//
+//
+//
+
 const ExperienceCard: React.FC<ExperienceCardProps> = ({ experienceItem }) => {
+  const renderExperienceImage = () => {
+    switch (experienceItem.name) {
+      case 'Elice':
+        return (
+          <Image
+            fill
+            src={experienceItem.imgUrl}
+            alt={experienceItem.name}
+            className="rounded-[1.25rem]"
+            style={{ objectFit: 'contain' }}
+          />
+        );
+      case 'CEOS':
+        return (
+          <Image
+            fill
+            src={experienceItem.imgUrl}
+            alt={experienceItem.name}
+            className="rounded-[1.25rem]"
+            style={{ objectFit: 'cover' }}
+          />
+        );
+      default:
+        return null;
+    }
+  };
+
+  //
+  //
+  //
+
   return (
     <li className="flex justify-between">
       <div className="flex flex-col gap-[1.875rem] py-[1.25rem]">
@@ -36,13 +75,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experienceItem }) => {
         </div>
       </div>
       <div className="relative h-full w-[16.1875rem]">
-        <Image
-          fill
-          src={experienceItem.imgUrl}
-          alt={experienceItem.name}
-          className="rounded-[1.25rem]"
-          style={{ objectFit: 'cover' }}
-        />
+        {renderExperienceImage()}
       </div>
     </li>
   );
